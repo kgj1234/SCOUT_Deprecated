@@ -8,4 +8,4 @@ The cell tracking module performs well in regards to false discovery rate, and p
 
 These methods are described in "Robust Population Single Neuronal Calcium Signal Extraction Using SCOUT Allows for Longitudinal Analysis of Behavior-associated Neural Ensemble Dynamics”, which is currently under review by Nature Methods.
 
-Demos contains demos of both modules.
+./Demos contains demos of both modules, on simulated recordings.
