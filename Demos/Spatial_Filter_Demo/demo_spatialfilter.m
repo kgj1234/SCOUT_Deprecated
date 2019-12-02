@@ -17,10 +17,15 @@
 clear all; clc
 global  d1 d2 numFrame sframe num2read Fs neuron neuron_ds ...
     neuron_full Ybg_weights; %#ok<NUSED> % global variables, don't change them manually
-%To get around github's filesize restriction. Move to server later.
+%Temporary workaround for github's filesize restriction. Move to server later.
 load('Y1')
 load('Y2')
+load('Y3')
+load('Y4')
+
 Y=cat(3,Y1,Y2);
+Y=cat(3,Y,Y3);
+Y=cat(3,Y,Y4);
 save('Y','Y')
 
 
