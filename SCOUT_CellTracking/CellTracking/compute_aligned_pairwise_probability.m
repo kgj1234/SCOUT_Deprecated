@@ -228,7 +228,7 @@ end
 if exist('spat_aligned','var')
 disp('Secondary Tracking Using Spatial Criterion')
 %Update chains based on probabilities between all recording pairs
-[aligned_neurons,aligned_probabilities]=align_via_spatial(aligned_neurons,aligned_probabilities,pair_aligned,spat_aligned,probabilities,min_prob,min_prob,size_vec);
+[aligned_neurons,aligned_probabilities]=align_via_spatial(aligned_neurons,aligned_probabilities,pair_aligned,spat_aligned,probabilities,min_prob,chain_prob);
 [aligned_neurons,aligned_probabilities]=...
     align_neurons_fill_in(aligned_neurons,aligned_probabilities,pair_aligned,probabilities,min_prob);
 
