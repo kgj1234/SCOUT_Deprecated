@@ -90,7 +90,7 @@ for i=size(aligned_neurons,2)-1:-1:2
             
             
         elseif iszero(aligned_neurons(j,i))&~iszero(aligned_neurons(j,i-1))
-            [aligned_neurons,aligned_probabilities]=fill_in_left(aligned_neurons,aligned_probabilities,pair_aligned,probabilities,i,j,min_prob);
+            [aligned_neurons,aligned_probabilities]=fill_in_left_adj(aligned_neurons,aligned_probabilities,pair_aligned,probabilities,i,j,min_prob);
         elseif iszero(aligned_neurons(j,i))&~iszero(aligned_neurons(j,i+1))
             [aligned_neurons,aligned_probabilities]=fill_in_right_adj(aligned_neurons,aligned_probabilities,pair_aligned,probabilities,i,j,min_prob);
             
