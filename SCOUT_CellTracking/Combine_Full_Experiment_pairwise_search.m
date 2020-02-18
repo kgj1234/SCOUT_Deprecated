@@ -49,4 +49,6 @@ for i=1:num_files-1
 end
 temp_neurons{end+1}=neurons{end}.copy();
 %Cell tracking
-neuron=cellTracking_SCOUT(temp_neurons,'links',links,'overlap',min_frame_overlaps,'register_sessions',true,'weights',[2.5,5,5,5,1,2],'registration_template','spatial','max_dist',18,'registration_method','non-rigid','probability_threshold',.5,'corr_thresh',.7,'probability_assignment_method','Kmeans','single_corr','true');
+neuron=cellTracking_SCOUT(temp_neurons,'links',links,'overlap',min_frame_overlaps,'register_sessions',true,'weights',[2.5,5,5,5,1,2],...
+'registration_template','spatial','max_dist',18,'registration_method','non-rigid','min_prob',.5,'chain_prob',.35,...
+'corr_thresh',.7,'probability_assignment_method','Kmeans','single_corr','true');
